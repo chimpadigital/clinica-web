@@ -58,7 +58,8 @@ body {
 	right: 0px;
 }
 
-.item img {}
+.item img {padding-right: 12px;}
+.item .team-img img {padding-right: 0px;}
 
 /* 3. Header */
 
@@ -1203,7 +1204,7 @@ ul.doctor-list li h6 {
 
 .client-section {
 	background: url(../img/general/job-background.jpg) no-repeat center;
-	background-size: 120% auto;
+	background-size: cover;
 }
 
 .client-section .client-stat {
@@ -4354,7 +4355,7 @@ i.fa.icon {
 }
 
 #clinica {
-	background: url(../../assets/img/back-clinica.jpg) no-repeat top right;
+	background: url(../../assets/img/back-clinica.jpg) no-repeat center right;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -4644,3 +4645,4 @@ h5.info {
 #header{
     padding: 150px 0 67px!important;
 }
+.m-b-20{margin-bottom: 20px;}

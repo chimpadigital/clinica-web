@@ -20,8 +20,9 @@ $("#cap-slider").owlCarousel({
 $("#time-plan").owlCarousel({
 	slideSpeed : 400,
 	singleItem:true,
-	autoPlay : false,
-	pagination : false,
+	autoPlay : true,
+  pagination : false,
+  
 	navigation : true,
 	navigationText:["<",">"]
 })
@@ -31,6 +32,23 @@ $("#tweet-slider").owlCarousel({
 	singleItem: true,
 	autoPlay : true,
 	pagination : true
+});
+
+$("#owl-equipos").owlCarousel({
+  slideSpeed : 400,
+  items: 2,
+	singleItem: false,
+	autoPlay : true,
+	pagination : true
+});
+
+$("#owl-logos-equipo").owlCarousel({
+  slideSpeed : 400,
+  items : 7,
+	singleItem: false,
+  autoPlay : true,
+  autoPlaySpeed: 1000,
+	pagination : false
 });
 
 // Sticky Header 

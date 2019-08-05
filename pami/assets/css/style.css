@@ -294,7 +294,7 @@ body {
 
 .sticky-header.stuck {
 	position: fixed;
-	background: rgba(255, 255, 255, 0.17);
+	background: rgba(0, 8, 29, 0.46);
 	border-bottom: 0px solid #eaeaea;
 	width: 100%;
 	left: 0;

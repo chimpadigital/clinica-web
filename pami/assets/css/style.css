@@ -4320,7 +4320,7 @@ h5.phone {
     /* border-bottom: 3px solid transparent; */
     background: #22b9ab;
     margin-left: 0px;
-        text-decoration: underline;
+        /* text-decoration: underline; */
 }
 
 i.fa.icon {
@@ -4482,7 +4482,7 @@ a {
 }
 
 .logop {
-	background: url(../img/isologotipo-blanco.svg);
+	background: url(../img/isologotipo-blanco2.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;

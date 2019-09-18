@@ -1214,17 +1214,18 @@ ul.doctor-list li h6 {
 }
 
 .client-section .client-stat h3:after {
-	content: " ";
-	position: absolute;
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	border-bottom-color: #e5e5e5;
-	display: table;
-	padding-top: 20px;
-	left: 0px;
-	right: 0px;
-	margin: 0 auto;
-	width: 75px;
+    content: " ";
+    position: absolute;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #336db5;
+    display: table;
+    padding-top: 20px;
+    left: 50%;
+    right: 0px;
+    margin: 0 auto;
+    width: 75px;
+    transform: translate(-50%, 0px);
 }
 
 .client-section .client-stat h6 {

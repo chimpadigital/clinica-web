@@ -30,7 +30,7 @@ $data 			= array(); 		// array to pass back data
 //inicio script grabar datos en csv
 $fichero = 'clinica.csv';//nombre archivo ya creado
 //crear linea de datos separado por coma
-$fecha=date("dd-mm-yyy H:i:s");
+$fecha=date("d-m-y H:i:s");
 $linea = $fecha.";".$_POST['name'].";".$_POST['email'].";".$_POST['superheroAlias']."\n";
 // Escribir la linea en el fichero
 file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
@@ -41,16 +41,16 @@ $email_message .= "<h4 style='margin-bottom:4px'>Nombre y Apellido:</h4> " . $_P
 $email_message .= "<h4 style='margin-bottom:4px'>Email:</h4> " . $_POST['email'] . "<br>";
 $email_message .= "<h4 style='margin-bottom:4px'>Mensaje:</h4> " . $_POST['superheroAlias'] . "<br>";
 
-$email_subject = "Consulta web clinica Santa Lucía";
+$email_subject = "Consulta web clinica Santa LucÃ­a";
 
 $mail = new PHPMailer;
 $mail->isSMTP();
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
-$mail->Host = 'mail.clinicasantaluciasalta.com';
-$mail->Port = 2525;
-// $mail->SMTPSecure = 'tls';
+$mail->Host = '	mail.clinicasantaluciasalta.com';
+$mail->Port = 9025;
+// $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = false;
 $mail->SMTPAutoTLS = false;
@@ -61,12 +61,12 @@ $mail->SMTPAutoTLS = false;
 //         'allow_self_signed' => true
 //     )
 // );
-$mail->Username = 'info-clinicasantaluciasalta.com';
+$mail->Username = 'info@clinicasantaluciasalta.com';
 $mail->Password = 'santsalta159';
 $mail->setFrom('info@clinicasantaluciasalta.com', 'clinica');
 
 $mail->addReplyTo('info@clinicasantaluciasalta.com','test');
-$mail->addAddress('info@clinicasantaluciasalta.com','Clínica Santia Lucía');
+$mail->addAddress('info@clinicasantaluciasalta.com','ClÃ­nica Santia LucÃ­a');
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
 $mail->Body    = $email_message;

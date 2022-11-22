@@ -675,7 +675,14 @@ ul.doctor-list {
 	width: 365px;
 	height: 227px;
 	margin-left: 0px;
+	flex-direction: column;
 }
+
+.team-2{
+	display: flex;
+	flex-direction: column;
+}
+
 
 #team .team-member2 {
 	width: 365px;

@@ -683,6 +683,7 @@ p.lead {
 	margin: -17px -5px 0px -195px;
 	z-index: 9989;
 	float: left;
+
 }
 
 /* 6. Insurance section */
@@ -944,11 +945,16 @@ ul.doctor-list li h6 {
 
 #team .team-member {
 	position: relative;
-	display: table;
+	display: flex;
 	width: 100%;
 	border: 1px solid #eaeaea;
 	overflow: hidden;
 	margin-bottom: 16px;
+	height: 100%;
+}
+
+.team-2{
+	display: flex;
 }
 
 #team .item {
@@ -979,7 +985,7 @@ ul.doctor-list li h6 {
 
 .team-img {
 	width: 100%;
-	height: 178px;
+	/* height: 100%; */
 	float: none ;
 	position: relative;
 	overflow: hidden;
@@ -990,6 +996,10 @@ ul.doctor-list li h6 {
 	transition: all .3s ease-in-out;
 }
 
+.team-img  img{
+	height: 100%;
+	object-fit: cover;
+}
 .team-img {
 	position: relative;
 }
@@ -4256,6 +4266,17 @@ a.apply-btn.btn.btn-md.btn-primary.services-info {
     padding: 15px 25px;
     font-size: .9em;
     font-weight: 600;
+}
+
+.btn{
+	background-color: #22b9ab;
+	border:#22b9ab;
+	border-radius:0px!important;
+}
+.btn:hover{
+	background-color: #22b9ab;
+	border:#22b9ab;
+	border-radius:0px!important;
 }
 
 #twitter-feed a {
